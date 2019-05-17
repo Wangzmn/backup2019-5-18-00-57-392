@@ -1,0 +1,24 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: 26,
+
+            applicationId    : "zmn.w.uiutility",
+
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+    def versionUsed = [
+            support: "26.0.0"
+    ]
+
+    dependencies = [
+            "recyclerview-v7": "com.android.support:recyclerview-v7:" +
+                    "${versionUsed.support}"
+    ]
+
+
+}
